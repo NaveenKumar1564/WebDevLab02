@@ -36,7 +36,7 @@ except Exception as err:
     print(f"Did not handle: {err} error.")
 
 try:
-    json_fn = 'data.json'
+    json_fn = r'WebDevLab02/Lab02/data.json'
     infile = open(json_fn)
     json_data = json.load(infile)
     infile.close()
