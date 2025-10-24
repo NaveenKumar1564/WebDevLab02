@@ -29,14 +29,14 @@ st.info("Data Loading Logic:" \
 "Then the panda library is used to read the csv file using its .read_csv methodn and json.load() is used to load the data from json file.")
 
 try:
-    StudyHourData =  pd.read_csv(r'/workspaces/WebDevLab02/WebDevLab02/Lab02/data.csv')
+    StudyHourData =  pd.read_csv('data.csv')
 except FileNotFoundError:
     print("File not found:/")
 except Exception as err:
     print(f"Did not handle: {err} error.")
 
 try:
-    json_fn = r'/workspaces/WebDevLab02/WebDevLab02/Lab02/data.json'
+    json_fn = 'data.json'
     infile = open(json_fn)
     json_data = json.load(infile)
     infile.close()
